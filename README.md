@@ -12,6 +12,15 @@
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Aimar Martins Lopes</a>, <a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">Eduardo Savino Gomes</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco de Souza Escobar</a>, <a href="https://www.linkedin.com/in/jbuesso/">Jose Carlos Buesso Junior</a>
 
+## ✏ Introdução
+![ods](https://github.com/2024-1-NADS1-A/Projeto9/blob/main/imagens/ODS.jpg)
+<p align="center">
+<img src="![ods](https://github.com/2024-1-NADS1-A/Projeto9/blob/main/imagens/ODS.jpg)" border="0">
+  <a> Feito por<a> <a href="https://www.een-portugal.pt/news/PublishingImages/ODS.jpg?Width=500">Objetivos de Desenvolvimento Sustentável (ODS)</a>
+</p>
+
+<br> No contexto brasileiro, a crescente urbanização e a necessidade de práticas sustentáveis representam um desafio que afeta diretamente a qualidade de vida nas cidades, a segurança alimentar e o uso eficiente dos recursos. Sob esta perspectiva, os Objetivos de Desenvolvimento Sustentável (ODS) são essenciais em nosso projeto de agricultura urbana para promover a produção local de alimentos e a gestão responsável dos recursos naturais. Os ODS incluídos em nosso projeto são Fome zero e agricultura sustentável (ODS 2) e Consumo e produção responsáveis (ODS 12). Este estudo busca minimizar esses desafios por meio da implementação de hortas urbanas e sistemas de cultivo sustentável, com o intuito de promover a segurança alimentar e incentivar práticas agrícolas que respeitem o meio ambiente e otimizem o uso de insumos. </br>
+
 ## Descrição
 
 <p align="center">

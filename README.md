@@ -26,7 +26,7 @@ O site de agricultura urbana é uma plataforma dedicada a promover o cultivo de 
 
 Ele traz informações sobre técnicas de plantio, manejo sustentável e dicas para aproveitar pequenos espaços, além de conectar pessoas interessadas em transformar suas cidades em ambientes mais verdes e produtivos. O objetivo é incentivar a sustentabilidade, a alimentação saudável e o fortalecimento de comunidades através da agricultura urbana.
 <br><br>
-May the force be with you!
+
 <br><br>
 
 ## 🛠 Estrutura de pastas

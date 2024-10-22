@@ -24,7 +24,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="[https://pix4free.org/assets/library/2021-01-20/originals/game.jpg](https://www.figma.com/proto/urKpph4EbbuDTzTQrSL5hG/Untitled?node-id=2-2&node-type=canvas&t=lQA57BsRfjgmqco0-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 

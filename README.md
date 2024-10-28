@@ -4,7 +4,7 @@
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Projeto criado com o intuito de zelar pelos bens sustentáveis do planeta, como também, incentivar a agricultura urbana, mostrando que não é difícil de possuir uma horta em pequenos espaços 
+# Projeto criado para promover a sustentabilidade e incentivar a agricultura urbana, demonstrando a viabilidade de hortas em pequenos espaços.
 
 ## CGKM
 

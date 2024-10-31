@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Grupo CGKM</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS principal -->
+    <link rel="stylesheet" href="login.css"> <!-- CSS específico para a página de login -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-line">
+            <nav class="menu">
+                <div class="menu-left">
+                    <!-- Logotipo pode ser adicionado aqui -->
+                </div>
+                <div class="menu-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Agricultura</a></li>
+                    <li><a href="#">Calculadora/rendimento</a></li>
+                    <li><a href="#">Sobre nós</a></li>               
+                </div>
+                <div class="menu-right">
+                    <div class="menu-right img">
+                        <a href="#"><img src="img/brasil.png" alt=""></a>
+                        <a href="#"><img src="img/eua.jpg" alt=""></a>
+                    </div>
+                    <div class="fale-conosco">
+                        <li><a href="#">Fale Conosco</a></li>
+                    </div>
+                </div>                        
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container" id="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="#" id="showRegister">Cadastre-se aqui</a></p>
+        </div>
+
+        <div class="register-container" id="register-container" style="display: none;">
+            <h2>Cadastro</h2>
+            <form id="registerForm">
+                <input type="text" id="registerName" placeholder="Nome" required>
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="password" id="registerPassword" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p>Já tem uma conta? <a href="#" id="showLogin">Faça login aqui</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Grupo CGKM. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -19,12 +19,12 @@
   <a> Feito por<a> <a href="https://www.een-portugal.pt/news/PublishingImages/ODS.jpg?Width=500">Objetivos de Desenvolvimento Sustentável (ODS)</a>
 </p>
 
-<br> No contexto brasileiro, a crescente urbanização e a necessidade de práticas sustentáveis representam um desafio que afeta diretamente a qualidade de vida nas cidades, a segurança alimentar e o uso eficiente dos recursos. Sob esta perspectiva, os Objetivos de Desenvolvimento Sustentável (ODS) são essenciais em nosso projeto de agricultura urbana para promover a produção local de alimentos e a gestão responsável dos recursos naturais. Os ODS incluídos em nosso projeto são Fome zero e agricultura sustentável (ODS 2) e Consumo e produção responsáveis (ODS 12). Este estudo busca minimizar esses desafios por meio da implementação de hortas urbanas e sistemas de cultivo sustentável, com o intuito de promover a segurança alimentar e incentivar práticas agrícolas que respeitem o meio ambiente e otimizem o uso de insumos. </br>
+<br> No contexto brasileiro, a crescente urbanização e a necessidade de práticas sustentáveis representam um desafio que afeta diretamente a qualidade de vida nas cidades, a segurança alimentar e o uso eficiente dos recursos. Sob esta perspectiva, os Objetivos de Desenvolvimento Sustentável são essenciais em nosso projeto de agricultura urbana para promover a produção local de alimentos e a gestão responsável dos recursos naturais. Os ODS incluídos em nosso projeto são Fome zero e agricultura sustentável (ODS 2) e Consumo e produção responsáveis (ODS 12). Este estudo busca minimizar esses desafios por meio da implementação de hortas urbanas e sistemas de cultivo sustentável, com o intuito de promover a segurança alimentar e incentivar práticas agrícolas que respeitem o meio ambiente e otimizem o uso de insumos. </br>
 
 ## Descrição
 
 <p align="center">
-
+<img src="![projeto](https://github.com/2024-1-NADS1-A/Projeto9/assets/108402431/77769b33-ea85-45f6-8d60-2b78828086df)" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 

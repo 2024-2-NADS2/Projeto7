@@ -24,8 +24,8 @@
 ## Descrição
 
 <p align="center">
-<img src="![projeto](https://github.com/2024-2-NADS2/Projeto7/blob/ec6e0aaa854c1ac35310aac3b87a2c2b2bf1f144/img/Untitled%20(1).pdf)" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="https://github.com/2024-2-NADS2/Projeto7/blob/7c9d2fd27303b964ca0d594634464ae8bb83205d/img/Untitled.png?raw=true" alt="Imagem">
+  Game by <a href="https://www.linkedin.com/in/caua-william-967295247/">Caua William Barbieri Brandão</a>, <a href="https://www.linkedin.com/in/gabriel-orlandi-4b5ab22ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Gabriel Orlandi Portes</a>, <a href="https://www.linkedin.com/in/karoline-lemos-540461296">Karoline Lemos Avelar</a>, <a href="https://www.linkedin.com/in/matheus-santoro-34b7a7186?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Matheus Santoro Carriço Veiga</a>
 </p>
 
 
@@ -86,3 +86,8 @@ Coloque código do prompt de comnando se for necessário
 
 
 ## 🎓 Referências
+<a href="https://brasil.un.org/pt-br/sdgs" target="_blank">Objetivos de Desenvolvimento Sustentável - ONU Brasil</a><br>
+<a href="https://cidadessemfome.org/pt_br/" target="_blank">Cidades Sem Fome</a><br>
+<a href="https://pactocontrafome.org/agricultura-urban/" target="_blank">Pacto Contra a Fome - Agricultura Urbana</a>
+
+

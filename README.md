@@ -24,7 +24,7 @@
 ## Descrição
 
 <p align="center">
-<img src="![projeto](https://github.com/2024-2-NADS2/Projeto7/blob/fec9d50dbd68c3f5bcc5af1678664ccf22426299/img/Logo.png)" border="0">
+<img src="![projeto](https://github.com/2024-2-NADS2/Projeto7/blob/ec6e0aaa854c1ac35310aac3b87a2c2b2bf1f144/img/Untitled%20(1).pdf)" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 

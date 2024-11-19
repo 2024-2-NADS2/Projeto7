@@ -65,17 +65,31 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
-Para abrir este projeto você necessita das seguintes ferramentas:
+🛠 Instalação do React - link do site https://cgkmcultivacao.netlify.app/
 
--<a href="https://godotengine.org/download">GODOT</a>
+• Baixe o Node.js no site oficial: Node.js.
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+• No terminal, execute o comando para criar um novo projeto React :
+
+npx create-react-app
+• Acesse o diretório do projeto:
+
+cd cultivacao
+🖥️ Instalação das Dependências
+
+• Instale o react-router-dom para navegação entre páginas:
+
+npm install react-router-dom
+• Para instalar o Axios, execute:
+
+npm install axios
+⚙ Configuração do Projeto
+
+• Para iniciar o servidor de desenvolvimento, use o comando:
+
+npm start
+• O projeto será exibido na URL: http://localhost:3001.
 
 
 ## 📋 Licença/License

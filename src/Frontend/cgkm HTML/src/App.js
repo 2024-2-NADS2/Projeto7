@@ -1,30 +1,14 @@
-
-import React, { useEffect, useState } from 'react';
-import AppRoutes from './routes';
+import React, { useState } from 'react';
+import AppRoutes from './routes'; 
 
 function App() {
-  const [data, setData] = useState('');
-
-  useEffect(() => {
-    fetch('https://v3hll9-5002.csb.app/') // Use o URL do seu servidor
-      .then((response) => response.text())
-      .then((data) => setData(data))
-      .catch((error) => console.error('Erro:', error));
-  }, []);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);  // Estado para controlar se o usuário está logado
 
   return (
-    <AppRoutes/>
+    <div>
+      <AppRoutes isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+    </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-

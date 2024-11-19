@@ -24,11 +24,10 @@ const Texto = styled.h1`
     color: #456757;
     font-family: 'Playfair Display', serif;
     font-size: 44px;
-    margin-left: 0; /* Posição padrão */
-    
-    /* Estilo adicional para "LEIA TAMBÉM" */
+    margin-left: 0;
+      
     &:nth-child(2) {
-        margin-left: 300px; /* Altere a margem conforme necessário */
+        margin-left: 300px; 
     }
 
     @media (max-width: 768px) {
@@ -46,7 +45,7 @@ const Linha = styled.div`
 
 const Container = styled.div`
     @media (max-width: 768px) {
-        display: none; /* Oculta o componente em telas menores */
+        display: none; 
     }
 `;
 

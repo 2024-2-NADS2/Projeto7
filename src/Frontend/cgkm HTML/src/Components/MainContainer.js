@@ -41,9 +41,9 @@ const LinhaConteudo = styled.div`
 const Conteudo = styled.div`
   background-color: white;
   border: 1px solid #ccc;
-  padding: 20px;
-  width: 300px;
-  margin-left: 40px;
+  padding: 13px 20px;
+  width: 290px;
+  margin-left: 80px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -69,16 +69,6 @@ const Link = styled(RouterLink)`
   font-size: 14px;
 `;
 
-const SaibaMais = styled(RouterLink)`
-  background-color: #456757;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-`;
 
 const Retangulo = styled.div`
   background-color: white;
@@ -86,7 +76,7 @@ const Retangulo = styled.div`
   padding: 20px;
   width: 300px;
   margin-left: 20px;
-  height: 658px;
+  height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -107,7 +97,7 @@ const Retangulo2 = styled.div`
   border: 1px solid #ccc;
   padding: 20px;
   width: 500px;
-  height: 658px;
+  height: 720px;
   margin-right: 40px;
   margin-bottom: 20px;
   margin-left: 40px;
@@ -136,7 +126,18 @@ const Figura2Styled = styled.img`
   }
 `;
 
+const P = styled.p`
+font-family: 'Poppins', sans-serif;
+    font-weight: 545; 
+    font-size: 15px; 
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+`
+
 function MainContainer() {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0); 
+};
   return (
     <ContainerPrinc>
       <ContainerCont>
@@ -144,26 +145,25 @@ function MainContainer() {
           <LinhaConteudo>
             <Conteudo>
               <h4>Guia prático de agricultura urbana</h4>
-              <p>
+              <P>
                 A agricultura urbana é uma tendência crescente devido à expansão
                 populacional por todo o globo. Segundo dados da ONU, 55% da
                 população mundial estão concentrados nos centros urbanos, e esse
                 índice deve chegar a 70% até 2050.
-              </p>
-              <SaibaMais to="/guia-pratico">Saiba mais</SaibaMais>{" "}
-              {/* Altere a rota para onde quiser */}
+              </P>
+              <Link to="/guia-pratico" onClick={handleLinkClick}>Saiba mais</Link>{" "}
             </Conteudo>
             <Conteudo>
               <h4>Entenda sobre as fazendas urbanas</h4>
-              <p>
+              <P>
                 Atualmente a agricultura urbana é praticada por cerca de 800
                 milhões de pessoas no mundo, segundo a Organização das Nações
                 Unidas para a Alimentação e a Agricultura (FAO). O mercado
                 global de fazendas urbanas movimentou US$ 236 bilhões em 2023,
                 com os jardins comunitários correspondendo à maior parte deste
                 montante.
-              </p>
-              <Link to="/agricultura">Saiba mais</Link>
+              </P>
+              <Link to="/agricultura" onClick={handleLinkClick}>Saiba mais</Link>
             </Conteudo>
           </LinhaConteudo>
           <Retangulo>
@@ -172,27 +172,26 @@ function MainContainer() {
               Calculadora de Rendimento!
             </h4>
             <CalculadoraImage src={Calculadora} alt="Calculadora" />
-            <p>
+            <P>
               Saiba de forma rápida e prática quanto você pode colher, otimizar
               seus recursos e aumentar sua produtividade.
               <br />
               Cultivar alimentos frescos e saudáveis nunca foi tão fácil.
               Transforme seu espaço urbano em uma verdadeira fonte de renda
               sustentável. Experimente agora e colha o seu futuro verde!
-            </p>
-            <Link to="/cadastro">Clique aqui!</Link>{" "}
-            {/* Altere a rota para onde quiser */}
+            </P>
+            <Link to="/login" onClick={handleLinkClick}>Clique aqui!</Link>{" "}
           </Retangulo>
           <Retangulo2>
             <h3>Importância da agricultura urbana</h3>
             <LinhaReta />
-            <p>
+            <P>
               A agricultura urbana transforma espaços nas cidades em áreas
               produtivas, oferecendo alimentos frescos e de qualidade. Ela
               contribui para a segurança alimentar, reduz a pegada de carbono e
               melhora o ambiente urbano. Além disso, promove a educação
               ambiental e fortalece a comunidade social.
-            </p>
+            </P>
             <br />
             <Figura2Styled src={Figura2Img} alt="Figura 2" />
           </Retangulo2>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 
 const Container = styled.main`
     padding: 20px;
@@ -60,26 +61,48 @@ const Button = styled.button`
     &:hover {
         background-color: #3a5a49;
     }
+
+    &:disabled {
+        background-color: #b0c2b0;
+        cursor: not-allowed;
+    }
 `;
 
-function AuthPage({ isLogin, onToggle }) {
-    const [name, setName] = useState('');
+const Message = styled.p`
+    color: ${props => (props.type === 'error' ? '#e74c3c' : '#27ae60')};
+    font-size: 1rem;
+    margin-top: 10px;
+`;
+
+const Link = styled(RouterLink)`
+    margin-top: 15px;
+    cursor: pointer;
+    color: #456757;
+    font-size: 0.9rem;
+
+    &:hover {
+        text-decoration: underline;
+        color: #3a5a49;
+    }
+`;
+
+function Logar({ isLogin, onToggle }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+
+    const navigate = useNavigate();  // Adicionando o hook para navegação
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Dados para cadastro ou login
         const data = { email, password };
 
-        if (!isLogin) {
-            data.name = name; // Adiciona nome se for cadastro
-        }
+        setIsLoading(true); // Ativa o carregamento
 
         try {
-            const response = await fetch(isLogin ? 'http://localhost:3001/login' : 'http://localhost:3001/cadastro', {
+            const response = await fetch('http://localhost:3001/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -88,31 +111,30 @@ function AuthPage({ isLogin, onToggle }) {
             });
 
             const result = await response.json();
+            setIsLoading(false); // Desativa o carregamento após a resposta
+
             if (response.ok) {
                 setMessage(result.message);
-                // Aqui você pode redirecionar o usuário para o login ou a página principal
+                // Redirecionar para a página home após o login bem-sucedido
+                navigate('/calculadora');  // Você pode substituir '/home' pelo seu caminho de destino
             } else {
-                setMessage(result.error || 'Erro ao tentar realizar a operação');
+                setMessage(result.error || 'Erro ao tentar fazer login');
             }
         } catch (error) {
-            setMessage('Erro na comunicação com o servidor');
+            setIsLoading(false); // Desativa o carregamento se houver erro
+            setMessage('Usuário ou senha incorretos');
         }
+    };
+
+    const handleLinkClick = () => {
+        window.scrollTo(0, 0);
     };
 
     return (
         <Container>
-            <Title>{isLogin ? 'Login' : 'Cadastro'}</Title>
+            <Title>{isLogin ? 'Login' : 'Entre'}</Title>
             <Section>
-                <Form onSubmit={handleSubmit}>
-                    {!isLogin && (
-                        <Input 
-                            type="text" 
-                            placeholder="Nome" 
-                            value={name} 
-                            onChange={(e) => setName(e.target.value)} 
-                            required 
-                        />
-                    )}
+                <Form onSubmit={handleSubmit}>  {/* Adicionando onSubmit no formulário */}
                     <Input 
                         type="email" 
                         placeholder="E-mail" 
@@ -127,12 +149,15 @@ function AuthPage({ isLogin, onToggle }) {
                         onChange={(e) => setPassword(e.target.value)} 
                         required 
                     />
-                    <Button type="submit">{isLogin ? 'Entrar' : 'Cadastrar'}</Button>
+                    <Button type="submit" disabled={isLoading}>
+                        {isLoading ? 'Carregando...' : (isLogin ? 'Entrar' : 'Entrar')}
+                    </Button>
                 </Form>
-                {message && <p>{message}</p>}
+                {message && <Message type={message.includes('Erro') ? 'error' : 'success'}>{message}</Message>} {/* Exibe a mensagem de erro ou sucesso */}
+                <Link to='/cadastro' onClick={handleLinkClick}>Ainda não tem uma conta? Cadastre-se</Link>
             </Section>
         </Container>
     );
 }
 
-export default AuthPage;
+export default Logar;

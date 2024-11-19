@@ -66,7 +66,7 @@ const Button = styled.button`
     }
 `;
 
-function Fale() {
+function Frutos() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -74,18 +74,18 @@ function Fale() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         const formData = { name, email, message };
-
+    
         try {
-            const response = await fetch('http://localhost:3001/fale-conosco', {
+            const response = await fetch('http://localhost:3001/outros', {  // Alterar para /outros
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             if (response.ok) {
                 setStatusMessage('Mensagem enviada com sucesso!');
                 setName('');
@@ -98,14 +98,15 @@ function Fale() {
             setStatusMessage('Erro ao enviar a mensagem');
         }
     };
+    
 
     return (
         <Container>
-            <Title>Fale Conosco</Title>
+            <Title>Não achou o fruto/vegetal que procurava?</Title>
             <Section>
                 <Subtitle>Estamos aqui para ajudar!</Subtitle>
                 <Paragraph>
-                    Se você tiver alguma dúvida, sugestão ou feedback, entre em contato conosco preenchendo o formulário abaixo.
+                    Escreva abaixo que mandaremos um e-mail para você, com as informações que.
                 </Paragraph>
                 <Form onSubmit={handleSubmit}>
                     <Input 
@@ -137,4 +138,4 @@ function Fale() {
     );
 }
 
-export default Fale;
+export default Frutos;

@@ -1,5 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
+import jardinagem from '../assets/jardinagem.png'
+import jardinagem3 from '../assets/jardinagem3.webp'
+import jardinagem4 from '../assets/jardinagem4.jpeg'
+
+const TituloAgricultura = styled.h1`
+    color: #456757;
+    font-size: 2rem;
+    margin: 0; 
+`;
+
+const FundoTituloAgricultura = styled.div`
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #BAD4C8;
+    max-width: fit-content; 
+    border-radius: 5px;
+    margin: 0 auto 40px;
+`;
+
+const SecaoImagemTextoAgricultura = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+`;
+
+const ImagemAgricultura = styled.img`
+    height: 400px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+`;
+
+const TextoAgricultura = styled.div`
+    font-family: 'Poppins', sans-serif;
+    font-weight: 545; 
+    font-size: 17px; 
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    width: 50%;
+    margin-left: 20px;
+`;
+
+const LinhaAgricultura = styled.div`
+    height: 2px;
+    background-color: #456757;
+    width: 100%;
+    margin-top: 10px;
+`;
 
 const Container = styled.div`
     padding: 40px;
@@ -9,49 +59,21 @@ const Container = styled.div`
     background-color: #f9f9f9;
 `;
 
-const Titulo = styled.h1`
-    color: #456757;
-    text-align: center;
-    font-size: 2.5rem;
-`;
-
 const Subtitulo = styled.h2`
     color: #456757;
     margin-top: 40px;
     font-size: 1.8rem;
 `;
 
-const Paragrafo = styled.p`
-    line-height: 1.8;
+const Paragrafo = styled.p`  
     margin: 20px 0;
-    font-size: 16px;
-    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 545; 
+    font-size: 17px; 
+    line-height: 1.5;
+    letter-spacing: 1.5px;  
 `;
 
-const Lista = styled.ul`
-    margin: 20px 0;
-    padding-left: 20px;
-`;
-
-const ListaItem = styled.li`
-    margin-bottom: 10px;
-`;
-
-const Imagem = styled.img`
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-`;
-
-const Quote = styled.blockquote`
-    font-style: italic;
-    margin: 20px 0;
-    padding: 10px;
-    border-left: 4px solid #456757;
-    background-color: #eef8ee;
-`;
 
 const VideoContainer = styled.div`
     display: flex;
@@ -66,47 +88,86 @@ const Video = styled.iframe`
     border: none;
 `;
 
+const RetanguloVerde = styled.div`
+    background-color: #BAD4C8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+`;
 
+const TituloRetangulo = styled.h3`
+    color: #456757;
+    margin-top: 40px;
+    font-size: 1.8rem;
+`;
+
+const TextoRetangulo = styled.p`
+    font-family: 'Poppins', sans-serif;
+    font-weight: 545; 
+    font-size: 17px; 
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+`;
+
+const ImagensContainer = styled.div`
+    display: flex;
+    gap: 20px;
+`;
+
+const ImagemPequena = styled.img`
+    width: 47%;  
+    height: 400px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 4%; 
+    &:last-child {
+        margin-right: 0;
+    }
+`;
+
+const SecaoInspiradores = styled.div`
+    margin-top: 40px;
+`;
 
 function Agricultura() {
+    
     return (
         <Container>
-            <Titulo>Agricultura Urbana</Titulo>
-            <Paragrafo>
-                A agricultura urbana é uma prática que envolve o cultivo de plantas e a criação de animais em áreas urbanas. Com o aumento da urbanização e o crescimento da população, essa prática se torna cada vez mais importante para garantir a segurança alimentar e promover a sustentabilidade nas cidades.
-            </Paragrafo>
-            
-            <Subtitulo>Benefícios da Agricultura Urbana</Subtitulo>
-            <Paragrafo>
-                A agricultura urbana traz diversos benefícios, entre eles:
-            </Paragrafo>
-            <Lista>
-                <ListaItem>Produção de alimentos frescos e saudáveis.</ListaItem>
-                <ListaItem>Redução da pegada de carbono.</ListaItem>
-                <ListaItem>Melhoria da qualidade do ar e da biodiversidade urbana.</ListaItem>
-                <ListaItem>Fortalecimento da comunidade através da participação em projetos de hortas comunitárias.</ListaItem>
-                <ListaItem>Geração de emprego e renda em áreas urbanas.</ListaItem>
-            </Lista>
-            <Imagem src="https://example.com/imagem-agricultura-urbana.jpg" alt="Agricultura Urbana" />
-            
-            <Subtitulo>Tecnologia na Agricultura Urbana</Subtitulo>
-            <Paragrafo>
-                A tecnologia desempenha um papel crucial na agricultura urbana. Inovações como a hidroponia, aquaponia e o uso de drones para monitoramento de culturas estão transformando a forma como os alimentos são cultivados nas cidades.
-            </Paragrafo>
-            <Quote>
-                "A tecnologia pode ser a chave para uma agricultura urbana mais eficiente e sustentável."
-            </Quote>
-            <Paragrafo>
-                Além disso, aplicativos de gerenciamento e plataformas de compartilhamento de recursos têm facilitado o acesso a informações e ferramentas para os agricultores urbanos, promovendo uma abordagem mais eficiente e sustentável.
-            </Paragrafo>
+            <FundoTituloAgricultura>
+                <TituloAgricultura>Agricultura Urbana</TituloAgricultura>
+            </FundoTituloAgricultura>
 
-            <Subtitulo>Exemplos de Práticas Sustentáveis</Subtitulo>
-            <Lista>
-                <ListaItem>Uso de compostagem para fertilizar o solo.</ListaItem>
-                <ListaItem>Captação de água da chuva para irrigação.</ListaItem>
-                <ListaItem>Cultivo de plantas nativas para promover a biodiversidade.</ListaItem>
-                <ListaItem>Implementação de sistemas de cultivo vertical para maximizar o espaço.</ListaItem>
-            </Lista>
+            <SecaoImagemTextoAgricultura>
+                <ImagemAgricultura src={jardinagem3} />
+                <TextoAgricultura>                  
+                    A agricultura urbana transforma espaços ociosos das cidades em refúgios produtivos e sustentáveis. Hortas comunitárias, jardins verticais e plantações em telhados são exemplos dessa prática que promove não apenas alimentos frescos e saudáveis, mas também um novo estilo de vida. A agricultura urbana vai além da produção de alimentos, promovendo um estilo de vida mais saudável e sustentável. Ela aproxima as pessoas do cultivo e incentiva hábitos conscientes. Pode ser implementada em diversos espaços, como terrenos baldios, quintais, varandas ou áreas públicas, adaptando-se a diferentes realidades e oferecendo soluções criativas para desafios urbanos, como falta de espaço e uso excessivo de recursos naturais.
+                </TextoAgricultura>
+            </SecaoImagemTextoAgricultura>
+
+            <LinhaAgricultura />
+
+            <RetanguloVerde>
+                <TituloRetangulo>Inovações Tecnológicas</TituloRetangulo>
+                <TextoRetangulo>
+                    Tecnologias como hidroponia e sistemas verticais estão transformando a agricultura urbana, tornando-a mais eficiente e adaptada às necessidades das cidades modernas.
+                </TextoRetangulo>
+                <ImagensContainer>
+                    <ImagemPequena src={jardinagem4} />
+                    <ImagemPequena src={jardinagem} />
+                </ImagensContainer>
+            </RetanguloVerde>
+
+            <LinhaAgricultura />
+
+            <SecaoInspiradores>
+                <Subtitulo>Exemplos Inspiradores</Subtitulo>
+                <Paragrafo>
+                Cidades como São Paulo e Nova York lideram projetos de hortas urbanas, aproveitando terraços e espaços subutilizados. Em São Paulo, hortas no topo de prédios fornecem alimentos frescos para funcionários e ajudam a mitigar o impacto climático. Essas iniciativas demonstram que, com criatividade e empenho, é possível transformar a paisagem urbana e gerar um impacto positivo duradouro.
+                </Paragrafo>             
+            </SecaoInspiradores>
+
+            <LinhaAgricultura />
 
             <Subtitulo>Aprenda Mais com Este Vídeo</Subtitulo>
             <VideoContainer>
@@ -116,8 +177,6 @@ function Agricultura() {
                     allowFullScreen
                 />
             </VideoContainer>
-
-           
         </Container>
     );
 }

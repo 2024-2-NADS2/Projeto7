@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link as RouterLink } from 'react-router-dom'; // Importando Link como RouterLink
-import CountryIcon1 from '../assets/brasil.png';
-import CountryIcon2 from '../assets/eua.png';
+import { Link as RouterLink } from 'react-router-dom';
+import LogoProjeto from '../assets/logo.png';
+
 
 const Cabecalho = styled.div`
     height: 70px;
@@ -9,23 +9,25 @@ const Cabecalho = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 5px;
 `;
 
 const Menu = styled.nav`
     display: flex;
     width: 100%;
-    align-items: center; /* Alinha verticalmente os itens do menu */
+    align-items: center;
 `;
 
 const MenuEsquerda = styled.div`
     display: flex;
     align-items: center;
+    margin-left: 20px; 
 `;
 
 const Logo = styled.img`
-    height: 50px;
-    margin-right: 20px;
+    height: 70px;
+    width: 100px; 
+   
 `;
 
 const MenuCentro = styled.ul`
@@ -36,39 +38,38 @@ const MenuCentro = styled.ul`
     margin: 0;
     justify-content: center;
     flex-grow: 1;
-    align-items: center; /* Alinha verticalmente os itens no centro */
+    align-items: center;
 `;
 
-const StyledLink = styled(RouterLink)` // Renomeando para evitar conflito
+const StyledLink = styled(RouterLink)`
     text-decoration: none;
     color: white;
     padding: 10px;
     cursor: pointer;
 
     &:hover {
-        text-decoration: underline; // Sublinha ao passar o mouse
+        text-decoration: underline;
     }
 `;
 
 const MenuDireita = styled.div`
+  
+    font-weight: bold;
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;   
     align-items: center;
 `;
 
-const CountryIcon = styled.img`
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-`;
 
 function Header() {
     return (
         <Cabecalho>
             <Menu>
                 <MenuEsquerda>
-                    {/* Aqui você pode adicionar o logo se necessário */}
+                    <Logo src={LogoProjeto} alt="Logo" />
                 </MenuEsquerda>
                 <MenuCentro>
                     <li>
@@ -85,8 +86,7 @@ function Header() {
                     </li>
                 </MenuCentro>
                 <MenuDireita>
-                    <CountryIcon src={CountryIcon1} alt="Idioma 1" />
-                    <CountryIcon src={CountryIcon2} alt="Idioma 2" />
+                    <StyledLink to="/login">Entre/Cadastre-se</StyledLink>
                 </MenuDireita>
             </Menu>
         </Cabecalho>

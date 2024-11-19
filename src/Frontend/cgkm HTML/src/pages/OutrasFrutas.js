@@ -1,17 +1,17 @@
+import Frutos from "../Components/Frutos"
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import Calc from "../Components/Calc"
 
 
 
-function Calculadora(){
+function OutrasFrutas(){
     return(
         <>
         <Header/>
-        <Calc />
+        <Frutos />
         <Footer/>
         </>
         )
 }
 
-export default Calculadora;
+export default OutrasFrutas;

@@ -31,7 +31,7 @@ const SetaD = styled.button`
   height: 50px;
   background-color: transparent;
   color: #000;
-  right: 5px; /* Seta para avançar */
+  right: 5px; 
 `;
 
 const SetaE = styled.button`
@@ -46,7 +46,7 @@ const SetaE = styled.button`
   height: 50px;
   background-color: transparent;
   color: #000;
-  left: 5px; /* Seta para voltar */
+  left: 5px; 
 `;
 
 const SlideImage = styled.img`
@@ -69,9 +69,9 @@ function Slides() {
     };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 5000); // Muda o slide a cada 5 segundos
-        return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
-    }, []); // O array vazio significa que o efeito será executado apenas uma vez
+        const interval = setInterval(nextSlide, 5000);
+        return () => clearInterval(interval); 
+    }, []);
 
     return (
         <>
@@ -80,8 +80,8 @@ function Slides() {
                 <Animacaoslides>
                     <SlideImage src={slides[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
                 </Animacaoslides>
-                <SetaE onClick={prevSlide}>&#10094;</SetaE> {/* Seta para voltar */}
-                <SetaD onClick={nextSlide}>&#10095;</SetaD> {/* Seta para avançar */}
+                <SetaE onClick={prevSlide}>&#10094;</SetaE> 
+                <SetaD onClick={nextSlide}>&#10095;</SetaD>
             </EspacoSlides>
             <Espaco />
         </>
